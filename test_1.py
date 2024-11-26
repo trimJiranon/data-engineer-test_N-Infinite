@@ -1,8 +1,9 @@
-
-def accum(s: str):
-    # Write your code here.
-    pass
-
+def accum(s):
+    if s.isalpha():
+        return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
+    else:
+        print("Invalid input: Contains characters other than a-z or A-Z.")
+    
 
 # Run this file for test
 assert accum("ZpglnRxqenU") == "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu"
