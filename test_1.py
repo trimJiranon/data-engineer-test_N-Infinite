@@ -1,4 +1,5 @@
 def accum(s):
+    # Write your code here.
     if s.isalpha():
         return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
     else:
